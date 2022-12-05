@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sl-container {
+    @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
+  }
+
+  .sl-container-wrap {
+    @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
+  }
+
+  /* FLEX */
+  .sl-flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .sl-flex-start {
+    @apply flex items-center justify-start;
+  }
+
+  .sl-flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .sl-flex-end {
+    @apply flex items-center justify-end;
+  }
+
+  .sl-flex-wrap {
+    @apply flex flex-wrap w-full;
+  }
+
+  /* ANIMATION */
+  .sl-animated {
+    @apply transition duration-500;
+  }
+
+  .sl-animated-fade {
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .sl-animated-slide {
+    @apply transition-all duration-700 ease-in-out;
+  }
+
+  /* BACKGROUND IMAGE */
+  .sl-bg-img {
+    @apply absolute top-0 left-0 w-full h-full mix-blend-multiply z-0;
+  }
+
+  .sl-bg-cover {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+}
+
+@layer base {
+  section {
+    @apply relative w-full;
+  }
+
+  a {
+    @apply inline-block cursor-pointer;
+  }
+
+  button {
+    @apply inline-block cursor-pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply outline-none bg-transparent;
+  }
+
+  img {
+    @apply object-cover;
+  }
+}
+
+@layer utilities {
+     
+}

@@ -1,0 +1,20 @@
+{
+  "name": "tech infiny",
+  "version": "1.0.0",
+  "description": "Company portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify"
+  },
+  "keywords": [],
+  "author": "TECH-iNFINY",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iNFINY-NET/tech-infiny.git"
+  }
+}
